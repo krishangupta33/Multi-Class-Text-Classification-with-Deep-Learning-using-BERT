@@ -1,0 +1,28 @@
+# AG News Text Classification with BERT — Requirements
+# Tested on Python 3.8.10
+
+# ---------- Deep Learning frameworks ----------
+# PyTorch (CPU wheels; remove the --extra-index-url line below if you want CUDA builds)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
+tensorflow==2.11.0
+
+# ---------- BERT / Transformer stack ----------
+transformers==4.17.0      # Hugging Face models & tokenizers (BERT)
+ktrain==0.32.3           # Lightweight wrapper for building/fitting/deploying BERT models
+datasets==2.16.0         # Hugging Face datasets library (loads the AG News dataset)
+fsspec==2023.9.2         # Pin: required for compatibility with datasets==2.16.0
+
+# ---------- Data handling ----------
+numpy==1.24.0
+pandas==1.5.2
+
+# ---------- Visualization ----------
+matplotlib==3.6.2
+seaborn==0.12.1
+
+# ---------- Evaluation / utilities ----------
+scikit-learn==1.2.0      # Metrics & splitting utilities
+psutil==5.9.4            # Hardware checks (e.g. virtual_memory in the notebooks)

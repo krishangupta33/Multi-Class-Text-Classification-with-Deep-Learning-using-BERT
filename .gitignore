@@ -1,0 +1,63 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ---------- Virtual environments ----------
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# ---------- Notebooks / Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+# Uncomment to ignore notebook outputs (keep sources):
+# *.ipynb
+
+# ---------- Data & model artifacts (large files) ----------
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.zip
+
+# ---------- Hugging Face cache ----------
+.cache/
+hf_cache/
+
+# ---------- Project build outputs ----------
+# (note: Project_Modular_Code/output/bert-ag-news-predictor/tf_model.preproc
+#  is intentionally tracked — it's only ~1MB and needed to reload the predictor)
+
+# ---------- IDEs / editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------- OS ----------
+*.log
+logs/
+tmp/
+temp/
